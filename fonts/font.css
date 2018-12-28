@@ -1,4 +1,12 @@
 @font-face {
-    font-family: font;
-    src: url('Ico.woff') format('woff')
+    font-family: Ico;
+    src: url('Ico.woff') format('woff');
+}
+@font-face {
+    font-family: alert-font;
+    src: url('Awesome.woff') format('woff');
+}
+@font-face {
+    font-family: ubuntu-font;
+    src: url('Ubuntu.ttf');
 }

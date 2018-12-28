@@ -9,20 +9,20 @@
 
 body, html {
 	height: 100%;
-	font-family: font;
+  font-family: ubuntu-font, sans-serif;
 }
 
 body {
-	background-image: url("../bg.jpg");
+	background-image: url("../../img/bg.jpg");
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-position:center;
-	font-family: font;
+  font-family: ubuntu-font, sans-serif;
 }
 
 /*---------------------------------------------*/
 a {
-	font-family: Ubuntu-Regular;
+  font-family: ubuntu-font, sans-serif;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -48,7 +48,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-	font-family: font;
+  font-family: ubuntu-font, sans-serif;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -110,7 +110,7 @@ iframe {
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
 .txt1 {
-  font-family: font;
+  font-family: ubuntu-font, sans-serif;
   font-size: 16px;
   color: #5ea3a3;
   line-height: 1.4;
@@ -161,7 +161,7 @@ iframe {
 }
 
 .login100-form-title {
-  font-family: font;
+  font-family: ubuntu-font, sans-serif;
   font-size: 30px;
   color: #488b8f;
   line-height: 1.2;
@@ -188,7 +188,7 @@ iframe {
 
 /*---------------------------------------------*/
 .input100 {
-  font-family: font;
+  font-family: ubuntu-font, sans-serif;
   color: #488b8f;
   line-height: 1.2;
   font-size: 18px;
@@ -260,7 +260,7 @@ iframe {
 }
 
 .label-checkbox100 {
-  font-family: font;
+  font-family: ubuntu-font, sans-serif;
   font-size: 16px;
   color: #999999;
   line-height: 1.2;
@@ -273,7 +273,7 @@ iframe {
 
 .label-checkbox100::before {
   content: "\f00c";
-  font-family: font;
+  font-family: ubuntu-font, sans-serif;
   font-size: 13px;
   color: transparent;
 
@@ -317,7 +317,7 @@ iframe {
 }
 
 .login100-form-btn {
-  font-family: font;
+  font-family: ubuntu-font, sans-serif;
   font-size: 16px;
   color: #fff;
   line-height: 1.2;
@@ -371,7 +371,7 @@ iframe {
   right: 12px;
   pointer-events: none;
 
-  font-family: font;
+  font-family: ubuntu-font, sans-serif;
   color: #c80000;
   font-size: 14px;
   line-height: 1.4;
@@ -388,7 +388,7 @@ iframe {
 
 .alert-validate::after {
   content: "\f12a";
-  font-family: font;
+  font-family: alert-font, sans-serif;
   display: block;
   position: absolute;
   color: #c80000;
