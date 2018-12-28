@@ -1,9 +1,6 @@
-/*//////////////////////////////////////////////////////////////////
-[ RESTYLE TAG ]*/
-
 * {
-	margin: 0px; 
-	padding: 0px; 
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 }
 
@@ -26,7 +23,7 @@ a {
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
-	margin: 0px;
+	margin: 0;
 	transition: all 0.4s;
 	-webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
@@ -44,7 +41,7 @@ a:hover {
 
 /*---------------------------------------------*/
 h1,h2,h3,h4,h5,h6 {
-	margin: 0px;
+	margin: 0;
 }
 
 p {
@@ -52,11 +49,11 @@ p {
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
-	margin: 0px;
+	margin: 0;
 }
 
 ul, li {
-	margin: 0px;
+	margin: 0;
 	list-style-type: none;
 }
 
@@ -413,7 +410,3 @@ iframe {
     opacity: 1;
   }
 }
-
-
-/*//////////////////////////////////////////////////////////////////
-[ Responsive ]*/
