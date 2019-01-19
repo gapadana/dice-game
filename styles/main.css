@@ -1,0 +1,22 @@
+body{
+    background-color: #f6f4f4;
+}
+.navbar{
+    background-color: #2c2727;
+    box-shadow: 0 0 50px 5px #000000;
+}
+.navbar-brand>img {
+    max-height: -webkit-fill-available;
+}
+.navbar-brand {
+    padding: 0;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: #2c2727;
+    color: #f6f4f4;
+    box-shadow: 0 0 50px 5px #000000;
+}
