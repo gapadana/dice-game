@@ -11,6 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="fonts/font.css">
     <link href="styles/main.css" rel="stylesheet">
 
 </head>
@@ -20,20 +21,20 @@
         <a class="navbar-brand" href="#"><img alt="GShark" src="img/logo.png"></a>
         <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link"  href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link"  href="#">Play</a></li>
-            <li class="nav-item"><a class="nav-link"  href="#">Create new game</a></li>
-            <li class="nav-item"><a class="nav-link"  href="#">View all players</a></li>
-            <li class="nav-item"><a class="nav-link"  href="#">View all games</a></li>
+            <li class="nav-item"><a class="nav-link"  href="#play">Play</a></li>
+            <li class="nav-item"><a class="nav-link"  href="#create">Create new game</a></li>
+            <li class="nav-item"><a class="nav-link"  href="#players">View all players</a></li>
+            <li class="nav-item"><a class="nav-link"  href="#games">View all games</a></li>
         </ul>
     </nav>
 
 <div class="container">
-    <div class="row mt-5">
-        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12 px-6">
+    <div class="row mt-5" id="play">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12 px-6" >
             <img class="cat" src="img/play.jpg">
         </div>
         <div class="mt-auto mb-auto col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12 px-6">
-            <p>
+            <p class="bold">
                 Play:
             </p>
             <p>
@@ -41,9 +42,9 @@
             </p>
         </div>
     </div>
-    <div class="row mt-5">
+    <div class="row mt-5" id="create">
         <div class="mt-auto mb-auto col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12 px-6">
-            <p>
+            <p class="bold">
                 Create new game:
             </p>
             <p>
@@ -54,12 +55,12 @@
             <img class="cat" src="img/create.jpg">
         </div>
     </div>
-    <div class="row mt-5">
+    <div class="row mt-5" id="players">
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12 px-6">
             <img class="cat" src="img/players.jpg">
         </div>
         <div class="mt-auto mb-auto col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12 px-6">
-            <p>
+            <p class="bold">
                 View all players:
             </p>
             <p>
@@ -67,9 +68,9 @@
             </p>
         </div>
     </div>
-    <div class="row mt-5 mb-5">
+    <div class="row mt-5 mb-5" id="games">
         <div class="mt-auto mb-auto col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12 px-6">
-            <p>
+            <p class="bold">
                 View all games:
             </p>
             <p>
