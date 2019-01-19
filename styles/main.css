@@ -1,14 +1,14 @@
 body{
-    background-color: #f6f4f4;
+    background-color: #faf9f9;
 }
 .navbar{
     width: 100%;
     border-radius: 0;
-    background-color: #2c2727 !important;
-    box-shadow: 0 0 50px 5px #000000;
+    background-color: #488b8f !important;
+    box-shadow: 0 0 50px 5px #5ea3a3;
 }
 .navbar-dark .navbar-nav .nav-link{
-    color: #f6f4f4; !important;
+    color: #add2c9; !important;
 }
 
 .navbar-brand>img {
@@ -22,13 +22,20 @@ footer {
     bottom: 0;
     width: 100%;
     padding: 15px;
-    background-color: #2c2727;
-    color: #f6f4f4;
-    box-shadow: 0 0 50px 5px #000000;
+    background-color: #488b8f;
+    color: #add2c9;
+    box-shadow: 0 0 50px 5px #5ea3a3;
 }
 .cat{
     border-radius: 50%;
     cursor: pointer;
     max-width: -webkit-fill-available;
+}
+.footer-link{
+    color: #add2c9;
+}
+.footer-link:hover{
+    color: #faf9f9;
+    text-decoration: none;
 }
 
