@@ -1,5 +1,16 @@
+* {
+    font-family: ubuntu-font, sans-serif;
+    font-size: 20px;
+}
+html {
+  scroll-behavior: smooth;
+}
 body{
-    background-color: #faf9f9;
+background-color: #faf9f9;
+}
+.bold {
+    font-size: 22px;
+    font-weight: bold;
 }
 .navbar{
     width: 100%;
