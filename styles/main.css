@@ -2,9 +2,15 @@ body{
     background-color: #f6f4f4;
 }
 .navbar{
-    background-color: #2c2727;
+    width: 100%;
+    border-radius: 0;
+    background-color: #2c2727 !important;
     box-shadow: 0 0 50px 5px #000000;
 }
+.navbar-dark .navbar-nav .nav-link{
+    color: #f6f4f4; !important;
+}
+
 .navbar-brand>img {
     max-height: -webkit-fill-available;
 }
@@ -12,7 +18,7 @@ body{
     padding: 0;
 }
 footer {
-    position: fixed;
+    /*position: fixed;*/
     bottom: 0;
     width: 100%;
     padding: 15px;
@@ -20,3 +26,9 @@ footer {
     color: #f6f4f4;
     box-shadow: 0 0 50px 5px #000000;
 }
+.cat{
+    border-radius: 50%;
+    cursor: pointer;
+    max-width: -webkit-fill-available;
+}
+
