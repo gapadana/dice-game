@@ -2,32 +2,40 @@
     font-family: ubuntu-font, sans-serif;
     font-size: 20px;
 }
+
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
-body{
-background-color: #faf9f9;
+
+body {
+    background-color: #faf9f9;
 }
+
 .bold {
     font-size: 22px;
     font-weight: bold;
 }
-.navbar{
+
+.navbar {
     width: 100%;
     border-radius: 0;
     background-color: #488b8f !important;
     box-shadow: 0 0 50px 5px #5ea3a3;
 }
-.navbar-dark .navbar-nav .nav-link{
-    color: #add2c9; !important;
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #add2c9;
+!important;
 }
 
-.navbar-brand>img {
+.navbar-brand > img {
     max-height: -webkit-fill-available;
 }
+
 .navbar-brand {
     padding: 0;
 }
+
 footer {
     /*position: fixed;*/
     bottom: 0;
@@ -37,19 +45,83 @@ footer {
     color: #add2c9;
     box-shadow: 0 0 50px 5px #5ea3a3;
 }
-.cat{
+
+.cat {
     border-radius: 50%;
     cursor: pointer;
     max-width: -webkit-fill-available;
 }
-.cat:hover{
+
+.cat:hover {
     box-shadow: 0 0 50px 1px #5ea3a3;
 }
-.footer-link{
+
+.footer-link {
     color: #add2c9;
 }
-.footer-link:hover{
+
+.footer-link:hover {
     color: #faf9f9;
     text-decoration: none;
+}
+
+.custom-btn {
+    color: #add2c9;
+    background-color: #488b8f;
+    border-color: #add2c9;
+}
+
+.custom-btn:hover {
+    background-color: #5ea3a3;
+    border-color: #add2c9;
+}
+
+.custom-btn:not(:disabled):not(.disabled):active {
+    background-color: #5ea3a3;
+    border-color: #add2c9;
+}
+
+.custom-btn:focus {
+    box-shadow: 0 0 0 0.2rem #add2c9;
+}
+
+.custom-btn:not(:disabled):not(.disabled):active:focus {
+    box-shadow: 0 0 0 0.2rem #add2c9;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled).active, .btn-outline-secondary:not(:disabled):not(.disabled):active, .show > .btn-outline-secondary.dropdown-toggle {
+    background-color: #5ea3a3;
+    border-color: #add2c9;
+
+}
+
+.show > .btn-outline-secondary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem #5ea3a3;
+}
+
+.btn-outline-secondary.focus, .btn-outline-secondary:focus {
+    box-shadow: 0 0 0 0 #5ea3a3;
+}
+
+.dropdown-menu {
+    min-width: 20rem;
+}
+
+.form-control {
+    border-color: #488b8f;
+}
+
+.form-control:focus {
+    background-color: #fff;
+    border-color: #488b8f;
+    box-shadow: 0 0 0 0.2rem #add2c9;
+}
+
+a {
+    color: #5ea3a3;
+}
+
+a:hover {
+    color: #488b8f;
 }
 
