@@ -17,20 +17,32 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top" id="nav1">
+    <div class="container-fluid">
         <a class="navbar-brand" href="#"><img alt="GShark" src="img/logo.png"></a>
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link"  href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link"  href="#play">Play</a></li>
-            <li class="nav-item"><a class="nav-link"  href="#create">Create new game</a></li>
-            <li class="nav-item"><a class="nav-link"  href="#players">View all players</a></li>
-            <li class="nav-item"><a class="nav-link"  href="#games">View all games</a></li>
-        </ul>
-    </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingnavbar"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsingnavbar">
+            <ul class="nav navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#play">Play</a></li>
+                <li class="nav-item"><a class="nav-link" href="#create">Create new game</a></li>
+                <li class="nav-item"><a class="nav-link" href="#players">View all players</a></li>
+                <li class="nav-item"><a class="nav-link" href="#games">View all games</a></li>
+            </ul>
+            <div class="navbar-nav">
+                <div class="nav-item"><a class="nav-link" href="">Sign in</a></div>
+                <div class="nav-item"><a class="nav-link" href="">Sign up</a></div>
+            </div>
+        </div>
+    </div>
+</nav>
 
 <div class="container">
-    <div class="row mt-5" id="play">
-        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12 px-6" >
+    <div class="row mt-5 " id="play">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12 px-6">
             <img class="cat" src="img/play.jpg">
         </div>
         <div class="mt-auto mb-auto col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12 px-6">
@@ -42,17 +54,17 @@
             </p>
         </div>
     </div>
-    <div class="row mt-5" id="create">
-        <div class="mt-auto mb-auto col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12 px-6">
+    <div class="row mt-5 flex-row-reverse" id="create">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12 px-6">
+            <img class="cat" src="img/create.jpg">
+        </div>
+         <div class="mt-auto mb-auto col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12 px-6">
             <p class="bold">
                 Create new game:
             </p>
             <p>
                 Create your own game, with your own rules and skins.
             </p>
-        </div>
-        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12 px-6">
-            <img class="cat" src="img/create.jpg">
         </div>
     </div>
     <div class="row mt-5" id="players">
@@ -68,7 +80,10 @@
             </p>
         </div>
     </div>
-    <div class="row mt-5 mb-5" id="games">
+    <div class="row mt-5 mb-5 flex-row-reverse" id="games">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12 px-6">
+            <img class="cat" src="img/allgames.jpg">
+        </div>
         <div class="mt-auto mb-auto col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12 px-6">
             <p class="bold">
                 View all games:
@@ -77,22 +92,15 @@
                 View all games created so far. vote up or vote them down, you can also comment on them.
             </p>
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12 px-6">
-            <img class="cat" src="img/allgames.jpg">
-        </div>
     </div>
 </div>
 
-    <!-- Footer -->
-    <footer>
+<footer>
 
-      <!-- Copyright -->
-      <div class="text-center">© 2019 Copyright:
-          Ali Ebrahiminejad - <a target="_blank" class="footer-link" href="https://walllit.ir">Walllit.ir</a>
-      </div>
-      <!-- Copyright -->
+    <div class="text-center">© 2019 Copyright: Ali Ebrahiminejad -
+        <a target="_blank" class="footer-link" href="https://walllit.ir">Walllit.ir</a>
+    </div>
 
-    </footer>
-    <!-- Footer -->
+</footer>
 </body>
 </html>

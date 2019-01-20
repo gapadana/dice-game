@@ -42,6 +42,9 @@ footer {
     cursor: pointer;
     max-width: -webkit-fill-available;
 }
+.cat:hover{
+    box-shadow: 0 0 50px 1px #5ea3a3;
+}
 .footer-link{
     color: #add2c9;
 }
