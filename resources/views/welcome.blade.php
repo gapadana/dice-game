@@ -5,7 +5,7 @@
     <meta name="description" content="">
     <meta name="author" content="Ali Ebrahiminejad">
 
-    <title>Page</title>
+    <title>Play dice</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
