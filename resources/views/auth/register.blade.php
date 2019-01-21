@@ -2,22 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Register</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="public/styles/login/main.css">
-    <link rel="stylesheet" type="text/css" href="public/styles/login/util.css">
-    <link rel="stylesheet" type="text/css" href="public/fonts/font.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('styles/login/main.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('styles/login/util.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('fonts/font.css')}}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="public/styles/main.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="public/fonts/font.css">
+    <link href="{{asset('styles/main.css')}}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{asset('fonts/font.css')}}">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top" id="nav1">
     <div class="container-fluid">
-        <a class="navbar-brand" href=""><img alt="dice" src="public/img/logo.png"></a>
+        <a class="navbar-brand" href=""><img alt="dice" src="{{asset('img/logo.png')}}"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingnavbar"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -66,41 +66,45 @@
 <div class="container">
     <div class="row justify-content-md-center">
         <div class="col-md-auto panel">
-            <form class="login100-form validate-form flex-sb flex-w">
+            <form action="/register" method="post" class="login100-form validate-form flex-sb flex-w">
 					<span class="login100-form-title p-b-51">
 						Register
 					</span>
 
 
-                <div class="wrap-input100 validate-input m-b-16" data-validate="Username is required">
-                    <input class="input100" type="text" name="username" placeholder="Username">
+                <div class="wrap-input100 validate-input m-b-16" data-validate="Username is required" >
+                    <input class="input100" type="email" name="email" placeholder="Email" required>
                     <span class="focus-input100"></span>
                 </div>
 
 
                 <div class="wrap-input100 validate-input m-b-16" data-validate="Password is required">
-                    <input class="input100" type="password" name="pass" placeholder="Password">
+                    <input class="input100" type="password" id="password" name="password" placeholder="Password" required>
                     <span class="focus-input100"></span>
                 </div>
 
-                <div class="flex-sb-m w-full p-t-3 p-b-24">
-                    <div class="contact100-form-checkbox">
-                        <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-                        <label class="label-checkbox100" for="ckb1">
-                            Remember me
-                        </label>
-                    </div>
-
-                    <div>
-                        <a href="#" class="txt1">
-                            Not register yet?
-                        </a>
-                    </div>
+                <div class="wrap-input100 validate-input m-b-16" data-validate="Password is required" >
+                    <input class="input100" type="password" id="password_confirm" name="password2" placeholder="Confirm password" oninput="check(this)" required>
+                    <span class="focus-input100"></span>
                 </div>
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+                <script language='javascript' type='text/javascript'>
+                    function check(input) {
+                        if (input.value != document.getElementById('password').value) {
+                            input.setCustomValidity('Password Must be Matching.');
+                        } else {
+                            // input is valid -- reset the error message
+                            input.setCustomValidity('');
+                        }
+                    }
+                </script>
+
+
 
                 <div class="container-login100-form-btn m-t-17">
                     <button class="login100-form-btn">
-                        Login
+                        Register
                     </button>
                 </div>
 
@@ -109,15 +113,8 @@
     </div>
 </div>
 
-<footer>
 
-    <div class="text-center">© 2019 Copyright: Ali Ebrahiminejad -
-        <a target="_blank" class="footer-link" href="https://walllit.ir">Walllit.ir</a>
-    </div>
-
-</footer>
-
-<script src="public/js/login/main.js"></script>
+<script src="{{asset('js/login/main.js')}}"></script>
 
 
 </body>

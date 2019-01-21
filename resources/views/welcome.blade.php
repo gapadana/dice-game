@@ -32,36 +32,38 @@
                 <li class="nav-item"><a class="nav-link" href="#players">View all players</a></li>
                 <li class="nav-item"><a class="nav-link" href="#games">View all games</a></li>
             </ul>
-            <div class="navbar-nav">
-                <li class="dropdown order-1">
-                    <button type="button" id="dropdownMenu1" data-toggle="dropdown"
-                            class="custom-btn btn btn-outline-secondary dropdown-toggle">Login <span
-                                class="caret"></span></button>
-                    <ul class="dropdown-menu dropdown-menu-right mt-3">
-                        <li class="px-3 py-2">
-                            <form class="form" role="form">
-                                <div class="form-group">
-                                    <input id="emailInput" placeholder="Email" class="form-control form-control-sm"
-                                           type="text" required="">
-                                </div>
-                                <div class="form-group">
-                                    <input id="passwordInput" placeholder="Password"
-                                           class="form-control form-control-sm" type="text" required="">
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class="custom-btn btn btn-primary btn-block">Login</button>
-                                </div>
-                                <div class="form-group text-center">
-                                    <small><a href="#">Forgot password?</a></small>
-                                </div>
-                                <div class="form-group text-center">
-                                    <small><a href="#">Register now?</a></small>
-                                </div>
-                            </form>
-                        </li>
-                    </ul>
-                </li>
-            </div>
+
+                <div class="navbar-nav">
+                    <li class="dropdown order-1">
+                        <button type="button" id="dropdownMenu1" data-toggle="dropdown"
+                                class="custom-btn btn btn-outline-secondary dropdown-toggle">Login <span
+                                    class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right mt-3">
+                            <li class="px-3 py-2">
+                                <form class="form" role="form">
+                                    <div class="form-group">
+                                        <input id="emailInput" placeholder="Email" class="form-control form-control-sm"
+                                               type="text" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="passwordInput" placeholder="Password"
+                                               class="form-control form-control-sm" type="text" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="custom-btn btn btn-primary btn-block">Login
+                                        </button>
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <small><a href="#">Forgot password?</a></small>
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <small><a href="register">Register now?</a></small>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
         </div>
     </div>
 </nav>
