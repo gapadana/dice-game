@@ -14,8 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/register', 'RegistrationController@create');
-Route::post('/register', 'RegistrationController@store');
+Route::get('/rg', 'RegistrationController@create');
+Route::post('/rg', 'RegistrationController@store');
+Route::get('/lg', 'SessionsController@destroy');
+Route::post('/lg2', array(
+    'uses' => 'SessionsController@store'
+));
 
 Route::auth();
 

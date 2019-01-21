@@ -32,7 +32,12 @@
                 <li class="nav-item"><a class="nav-link" href="#players">View all players</a></li>
                 <li class="nav-item"><a class="nav-link" href="#games">View all games</a></li>
             </ul>
-
+            @if( auth()->check() )
+                <div class="navbar-nav">
+                    <a href="/lg" class="custom-btn btn btn-outline-secondary">Logout<span
+                                class="caret"></span></a>
+                </div>
+            @else
                 <div class="navbar-nav">
                     <li class="dropdown order-1">
                         <button type="button" id="dropdownMenu1" data-toggle="dropdown"
@@ -40,30 +45,31 @@
                                     class="caret"></span></button>
                         <ul class="dropdown-menu dropdown-menu-right mt-3">
                             <li class="px-3 py-2">
-                                <form class="form" role="form">
+                                <form action="/lg2" method="post" class="form">
+                                    {{ csrf_field() }}
                                     <div class="form-group">
-                                        <input id="emailInput" placeholder="Email" class="form-control form-control-sm"
-                                               type="text" required="">
+                                        <input id="emailInput" placeholder="Email" name="email" class="form-control form-control-sm"
+                                               type="email" required>
                                     </div>
                                     <div class="form-group">
-                                        <input id="passwordInput" placeholder="Password"
-                                               class="form-control form-control-sm" type="text" required="">
+                                        <input id="passwordInput" placeholder="Password" name="password"
+                                               class="form-control form-control-sm" type="password" required>
                                     </div>
                                     <div class="form-group">
-                                        <button type="submit" class="custom-btn btn btn-primary btn-block">Login
-                                        </button>
+                                        <button type="submit" class="custom-btn btn btn-primary btn-block">Login</button>
                                     </div>
                                     <div class="form-group text-center">
                                         <small><a href="#">Forgot password?</a></small>
                                     </div>
                                     <div class="form-group text-center">
-                                        <small><a href="register">Register now?</a></small>
+                                        <small><a href="/rg">Register now?</a></small>
                                     </div>
                                 </form>
                             </li>
                         </ul>
                     </li>
                 </div>
+            @endif
         </div>
     </div>
 </nav>

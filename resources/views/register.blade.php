@@ -24,8 +24,8 @@
         </button>
         <div class="collapse navbar-collapse" id="collapsingnavbar">
             <ul class="nav navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#play">Play</a></li>
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Play</a></li>
                 <li class="nav-item"><a class="nav-link" href="#create">Create new game</a></li>
                 <li class="nav-item"><a class="nav-link" href="#players">View all players</a></li>
                 <li class="nav-item"><a class="nav-link" href="#games">View all games</a></li>
@@ -37,14 +37,15 @@
                                 class="caret"></span></button>
                     <ul class="dropdown-menu dropdown-menu-right mt-3">
                         <li class="px-3 py-2">
-                            <form class="form" role="form">
+                            <form action="/lg2" method="post" class="form" role="form">
+                                {{ csrf_field() }}
                                 <div class="form-group">
-                                    <input id="emailInput" placeholder="Email" class="form-control form-control-sm"
-                                           type="text" required="">
+                                    <input id="emailInput" placeholder="Email" name="email" class="form-control form-control-sm"
+                                           type="text" required>
                                 </div>
                                 <div class="form-group">
-                                    <input id="passwordInput" placeholder="Password"
-                                           class="form-control form-control-sm" type="text" required="">
+                                    <input id="passwordInput" placeholder="Password" name="password"
+                                           class="form-control form-control-sm" type="password" required>
                                 </div>
                                 <div class="form-group">
                                     <button type="submit" class="custom-btn btn btn-primary btn-block">Login</button>
@@ -66,7 +67,7 @@
 <div class="container">
     <div class="row justify-content-md-center">
         <div class="col-md-auto panel">
-            <form action="/register" method="post" class="login100-form validate-form flex-sb flex-w">
+            <form action="/rg" method="post" class="login100-form validate-form flex-sb flex-w">
 					<span class="login100-form-title p-b-51">
 						Register
 					</span>
