@@ -7,17 +7,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles/login/main.css">
-    <link rel="stylesheet" type="text/css" href="styles/login/util.css">
-    <link rel="stylesheet" type="text/css" href="fonts/font.css">
+    <link rel="stylesheet" type="text/css" href="public/styles/login/main.css">
+    <link rel="stylesheet" type="text/css" href="public/styles/login/util.css">
+    <link rel="stylesheet" type="text/css" href="public/fonts/font.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles/main.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="fonts/font.css">
+    <link href="public/styles/main.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="public/fonts/font.css">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top" id="nav1">
     <div class="container-fluid">
-        <a class="navbar-brand" href=""><img alt="dice" src="img/logo.png"></a>
+        <a class="navbar-brand" href=""><img alt="dice" src="public/img/logo.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingnavbar"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -34,7 +34,7 @@
                 <li class="dropdown order-1">
                     <button type="button" id="dropdownMenu1" data-toggle="dropdown"
                             class="custom-btn btn btn-outline-secondary dropdown-toggle">Login <span
-                            class="caret"></span></button>
+                                class="caret"></span></button>
                     <ul class="dropdown-menu dropdown-menu-right mt-3">
                         <li class="px-3 py-2">
                             <form class="form" role="form">
@@ -117,7 +117,7 @@
 
 </footer>
 
-<script src="js/login/main.js"></script>
+<script src="public/js/login/main.js"></script>
 
 
 </body>
