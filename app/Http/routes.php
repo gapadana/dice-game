@@ -28,3 +28,5 @@ Route::get('/home', 'HomeController@index');
 Route::get('/players', function () {
     return view('players');
 });
+Route::get('/create', 'CreationController@show');
+Route::post('/create', 'CreationController@create');

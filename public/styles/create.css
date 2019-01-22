@@ -1,0 +1,9 @@
+div.container {
+    box-shadow: 0 0 20px 0 #5ea3a3;
+    padding: 10px 50px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+}

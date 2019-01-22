@@ -5,7 +5,7 @@
     <meta name="description" content="">
     <meta name="author" content="Ali Ebrahiminejad">
 
-    <title>Play dice</title>
+    <title>Create new game</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -13,24 +13,25 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="{{ asset('fonts/font.css')}}">
     <link href="{{ asset('styles/main.css')}}" rel="stylesheet">
+    <link href="{{ asset('styles/create.css')}}" rel="stylesheet">
 
 </head>
 
 <body>
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top" id="nav1">
     <div class="container-fluid">
-        <a class="navbar-brand" href=""><img alt="dice" src="{{ asset('img/logo.png') }}"></a>
+        <a class="navbar-brand" href="/"><img alt="dice" src="{{ asset('img/logo.png') }}"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingnavbar"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsingnavbar">
             <ul class="nav navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#play">Play</a></li>
-                <li class="nav-item"><a class="nav-link" href="#create">Create new game</a></li>
-                <li class="nav-item"><a class="nav-link" href="#players">View all players</a></li>
-                <li class="nav-item"><a class="nav-link" href="#games">View all games</a></li>
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/play">Play</a></li>
+                <li class="nav-item"><a class="nav-link" href="/create">Create new game</a></li>
+                <li class="nav-item"><a class="nav-link" href="/players">View all players</a></li>
+                <li class="nav-item"><a class="nav-link" href="/games">View all games</a></li>
             </ul>
             @if( auth()->check() )
                 <div class="navbar-nav">
@@ -48,7 +49,8 @@
                                 <form action="/lg2" method="post" class="form">
                                     {{ csrf_field() }}
                                     <div class="form-group">
-                                        <input id="emailInput" placeholder="Email" name="email" class="form-control form-control-sm"
+                                        <input id="emailInput" placeholder="Email" name="email"
+                                               class="form-control form-control-sm"
                                                type="email" required>
                                     </div>
                                     <div class="form-group">
@@ -56,7 +58,8 @@
                                                class="form-control form-control-sm" type="password" required>
                                     </div>
                                     <div class="form-group">
-                                        <button type="submit" class="custom-btn btn btn-primary btn-block">Login</button>
+                                        <button type="submit" class="custom-btn btn btn-primary btn-block">Login
+                                        </button>
                                     </div>
                                     <div class="form-group text-center">
                                         <small><a href="#">Forgot password?</a></small>
@@ -75,57 +78,38 @@
 </nav>
 
 <div class="container">
-    <div class="row mt-5 " id="play">
-        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12 px-6">
-            <img class="cat" src="{{ asset('img/play.jpg')}}">
-        </div>
-        <div class="mt-auto mb-auto col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12 px-6">
-            <p class="bold">
-                Play:
-            </p>
-            <p>
-                Start a new game, or continue your previously started game.
-            </p>
-        </div>
-    </div>
-    <div class="row mt-5 flex-row-reverse" id="create">
-        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12 px-6">
-            <a href="/create"><img class="cat" src="{{ asset('img/create.jpg')}}"></a>
-        </div>
-        <div class="mt-auto mb-auto col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12 px-6">
-            <p class="bold">
-                Create new game:
-            </p>
-            <p>
-                Create your own game, with your own rules and skins.
-            </p>
-        </div>
-    </div>
-    <div class="row mt-5" id="players">
-        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12 px-6">
-            <a href="/players"><img class="cat" src="{{ asset('img/players.jpg')}}"></a>
-        </div>
-        <div class="mt-auto mb-auto col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12 px-6">
-            <p class="bold">
-                View all players:
-            </p>
-            <p>
-                View all players that joined this site already, and see which one is online just right now.
-            </p>
-        </div>
-    </div>
-    <div class="row mt-5 mb-5 flex-row-reverse" id="games">
-        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12 px-6">
-            <img class="cat" src="{{ asset('img/allgames.jpg')}}">
-        </div>
-        <div class="mt-auto mb-auto col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12 px-6">
-            <p class="bold">
-                View all games:
-            </p>
-            <p>
-                View all games created so far. vote up or vote them down, you can also comment on them.
-            </p>
-        </div>
+    <div class="row py-5" id="play">
+        <form action="/create" method="post">
+            {!! csrf_field() !!}
+            <div>Enter: maximum score to win the game:</div>
+            <input type="number" name="max" min="1" required>
+            <div>Enter: dice number which should clear current score(0 for disable this rule):</div>
+            <input type="number" name="role" min="0" max="6" required>
+            <div>Enter: maximum throw per turn(0 for disable this rule):</div>
+            <input type="number" name="throw" min="0"  required>
+            <div>Enter: number of dices:</div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="d1">1</label>
+                    <input type="radio" name="dices" value="1" id="d1">
+                </div>
+                <div class="col-1">
+                    <label for="d2">2</label>
+                    <input type="radio" name="dices" value="2" id="d2">
+                </div>
+                <div class="col-1">
+                    <label for="d3">3</label>
+                    <input type="radio" name="dices" value="3" id="d3">
+                </div>
+                <div class="col-1">
+                    <label for="d4">4</label>
+                    <input type="radio" name="dices" value="4" id="d4">
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-4 mt-4">
+                <input type="submit" class="custom-btn btn btn-primary btn-block" value="Create the game">
+            </div>
+        </form>
     </div>
 </div>
 
