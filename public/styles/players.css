@@ -1,0 +1,29 @@
+div.container {
+    box-shadow: 0 0 20px 0 #5ea3a3;
+    padding: 10px 50px;
+}
+.card{
+    padding: 10px;
+}
+.card img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: green;
+}
+footer{
+    position: fixed;
+    bottom: 0px;
+}
+.avg-score{
+    font-size: 16px;
+    color: #5ea3a3;
+}
+.email{
+    font-size: 18px;
+    font-weight: bold;
+    color: #488b8f;
+}
