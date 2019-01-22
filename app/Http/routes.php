@@ -24,3 +24,7 @@ Route::post('/lg2', array(
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/players', function () {
+    return view('players');
+});
