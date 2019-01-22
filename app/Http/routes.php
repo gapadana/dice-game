@@ -30,3 +30,5 @@ Route::get('/players', function () {
 });
 Route::get('/create', 'CreationController@show');
 Route::post('/create', 'CreationController@create');
+
+Route::get('/games', 'GamesController@show');

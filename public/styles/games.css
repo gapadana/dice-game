@@ -1,0 +1,28 @@
+div.container {
+    box-shadow: 0 0 20px 0 #5ea3a3;
+    padding: 10px 50px;
+}
+.field{
+    box-shadow: 0px 10px 20px 0px #488b8f91;
+
+}
+.field *{
+    font-size: 16px;
+}
+footer{
+    position: fixed;
+    bottom: 0px;
+}
+.header div{
+    font-size: 16px;
+    font-weight: bold;
+}
+.fp{
+    border-left: #5ea4a4;
+    border-left-style: solid;
+    border-left-width: 1px;
+}
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}

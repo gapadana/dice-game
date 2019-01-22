@@ -116,7 +116,7 @@
     </div>
     <div class="row mt-5 mb-5 flex-row-reverse" id="games">
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12 px-6">
-            <img class="cat" src="{{ asset('img/allgames.jpg')}}">
+            <a href="/games"><img class="cat" src="{{ asset('img/allgames.jpg')}}"></a>
         </div>
         <div class="mt-auto mb-auto col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12 px-6">
             <p class="bold">

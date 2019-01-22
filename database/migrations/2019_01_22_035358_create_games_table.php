@@ -18,7 +18,9 @@ class CreateGamesTable extends Migration
             $table->integer('max_score');
             $table->integer('lose_dice');
             $table->integer('dice_number');
-            $table->integer('trow_limit')->default(-1);
+            $table->integer('trow_limit')->default(0);
+            $table->integer('up_votes')->default(0);
+            $table->integer('down_votes')->default(0);
             $table->timestamps();
         });
     }
